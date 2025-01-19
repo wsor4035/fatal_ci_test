@@ -10,8 +10,9 @@ jobs:
 
       - name: get repo
         uses: actions/checkout@v4
-        repository: https://github.com/Luanti-Extended-Engine-Features/LEEF-math
-        path: '/LEEF-math'
+        with:
+          repository: https://github.com/Luanti-Extended-Engine-Features/LEEF-math
+          path: '/LEEF-math'
 
       - name: update script perms
         run: ls -rtla
