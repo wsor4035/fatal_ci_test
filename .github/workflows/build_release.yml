@@ -32,9 +32,13 @@ jobs:
           repository: Luanti-Extended-Engine-Features/LEEF-filesystem
           path: './LEEF-filesystem'
 
-      - name: update script perms
+      - name: make sure we have repos
         run: ls -rtla
         shell: bash
 
       - name: Generate docs with LDoc
         uses: lunarmodules/ldoc@v1
+
+      - name: look at whats in docs
+        run: ls -rtla ./docs
+        shell: bash
