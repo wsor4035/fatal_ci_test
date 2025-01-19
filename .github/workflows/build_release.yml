@@ -1,0 +1,21 @@
+name: build_release
+on: push
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get current repo for whatever
+        uses: actions/checkout@v4
+
+      - name: get repo
+        uses: actions/checkout@v4
+        repository: https://github.com/Luanti-Extended-Engine-Features/LEEF-math
+        path: '/LEEF-math'
+
+      - name: update script perms
+        run: ls -rtla
+        shell: bash
+
+      - name: Generate docs with LDoc
+        uses: lunarmodules/ldoc@v0
