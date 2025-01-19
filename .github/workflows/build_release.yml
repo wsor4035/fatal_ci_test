@@ -19,4 +19,4 @@ jobs:
         shell: bash
 
       - name: Generate docs with LDoc
-        uses: lunarmodules/ldoc@v0
+        uses: lunarmodules/ldoc@v1
