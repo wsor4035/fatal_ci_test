@@ -8,11 +8,29 @@ jobs:
       - name: get current repo for whatever
         uses: actions/checkout@v4
 
-      - name: get repo
+      - name: get repo class
+        uses: actions/checkout@v4
+        with:
+          repository: Luanti-Extended-Engine-Features/LEEF-class
+          path: './LEEF-class'
+
+      - name: get repo b3d
+      uses: actions/checkout@v4
+      with:
+        repository: Luanti-Extended-Engine-Features/LEEF-b3d
+        path: './LEEF-b3d'
+
+      - name: get repo math
         uses: actions/checkout@v4
         with:
           repository: Luanti-Extended-Engine-Features/LEEF-math
           path: './LEEF-math'
+
+      - name: get repo filesystem
+        uses: actions/checkout@v4
+        with:
+          repository: Luanti-Extended-Engine-Features/LEEF-filesystem
+          path: './LEEF-filesystem'
 
       - name: update script perms
         run: ls -rtla
