@@ -15,10 +15,10 @@ jobs:
           path: './LEEF-class'
 
       - name: get repo b3d
-      uses: actions/checkout@v4
-      with:
-        repository: Luanti-Extended-Engine-Features/LEEF-b3d
-        path: './LEEF-b3d'
+        uses: actions/checkout@v4
+        with:
+          repository: Luanti-Extended-Engine-Features/LEEF-b3d
+          path: './LEEF-b3d'
 
       - name: get repo math
         uses: actions/checkout@v4
